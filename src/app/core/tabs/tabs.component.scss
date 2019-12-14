@@ -1,0 +1,31 @@
+::ng-deep .mat-tab-group .mat-tab-header {
+  display: none;
+}
+
+.side-nav-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    .sidenav {
+      width: 10vw;
+      background: #eeeeee;
+    }
+
+    .btn-item-nav{
+      background-color: white;
+      padding: 1.1rem;
+      float: right;
+      margin-top: 10px;
+      height: 15vh;
+      width: 100%;
+      p{
+        margin: 0;
+      }
+  }
+  }
+  
+ 
+  
