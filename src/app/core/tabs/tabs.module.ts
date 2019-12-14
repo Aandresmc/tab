@@ -7,6 +7,9 @@ import { DatosGeneralesComponent } from './rues/datos-generales/datos-generales.
 import { InformacionFinancieraComponent } from './rues/informacion-financiera/informacion-financiera.component';
 import { MaterialModule } from 'src/app/shared/material.module';
 import { from } from 'rxjs';
+import { DatosOrganizacionComponent } from './rues/datos-organizacion/datos-organizacion.component';
+import { ActividadEconomicaComponent } from './rues/actividad-economica/actividad-economica.component';
+import { InformacionComercialComponent } from './rues/informacion-comercial/informacion-comercial.component';
 
 
 @NgModule({
@@ -14,6 +17,9 @@ import { from } from 'rxjs';
     TabsComponent,
     DatosGeneralesComponent,
     InformacionFinancieraComponent,
+    DatosOrganizacionComponent,
+    ActividadEconomicaComponent,
+    InformacionComercialComponent,
   ],
   imports: [
     CommonModule,
