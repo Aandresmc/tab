@@ -1,31 +1,55 @@
 ::ng-deep .mat-tab-group .mat-tab-header {
   display: none;
 }
+::ng-deep .mat-tab-body-wrapper {
+  padding: 2rem;
+}
+::ng-deep span.mat-button-wrapper {
+  white-space: initial;
+  line-height: 25px;
+  font-size: 1rem;
+}
 
 .side-nav-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    .sidenav {
-      width: 10vw;
-      background: #eeeeee;
-    }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-    .btn-item-nav{
-      background-color: white;
-      padding: 1.1rem;
-      float: right;
-      margin-top: 10px;
-      height: 15vh;
-      width: 100%;
-      p{
-        margin: 0;
+  .sidenav {
+    background: #eeeeee;
+    width: 10vw;
+  }
+
+  @media (min-width: 0px) and (max-width: 767.98px) {
+    .sidenav {
+      width: 15vw;
+      .btn-item-nav {
+        p {
+          display: none;
+        }
       }
+    }
   }
+  button.active {
+    background-color: #3f51b5;
+    color: white;
+    p {
+      color: white!important;
+    }
+    mat-icon {
+      color: white;
+    }
   }
-  
- 
-  
+
+  .btn-item-nav {
+    float: right;
+    margin-top: 10px;
+    height: 15vh;
+    width: 100%;
+    p {
+      margin: 0;
+    }
+  }
+}

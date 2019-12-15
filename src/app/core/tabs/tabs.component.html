@@ -4,38 +4,21 @@
 
     <div class="nav flex-column">
 
-      <button type="button" class="btn  btn-item-nav" (click)="index = 0">
-        <mat-icon>account_circle</mat-icon>
-        <p class="d-block d-none-sm">Datos Generales</p>
+      <button *ngFor="let tab of tabs" [routerLink]="tab.route" routerLinkActive="active" mat-flat-button
+        class="btn btn-light  btn-item-nav" >
+        <mat-icon color="primary" >{{tab.icon}}</mat-icon>
+        <p class="text-muted font-weight-normal">{{tab.title}}</p>
       </button>
 
-      <button type="button" class="btn  btn-item-nav" (click)="index = 1">
-        <mat-icon>account_balance_wallet</mat-icon>
-        <p>Información Financiera</p>
-      </button>
-
-      <button type="button" class="btn btn-item-nav" (click)="index = 2">
-        <mat-icon>home_work</mat-icon>
-        <p>Datos de la Organización</p>
-      </button>
-
-      <button type="button" class="btn btn-item-nav" (click)="index = 2">
-        <mat-icon>store</mat-icon>
-        <p>Actividad Económica</p>
-      </button>
-
-      <button type="button" class="btn btn-item-nav" (click)="index = 2">
-        <mat-icon>account_balance</mat-icon>
-        <p>Información Comercial</p>
-      </button>
     </div>
 
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-tab-group [(selectedIndex)]="index" animationDuration="0ms">
-      <mat-tab> <app-datos-generales></app-datos-generales></mat-tab>
-      <mat-tab> <app-informacion-financiera></app-informacion-financiera></mat-tab>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab>
+        <router-outlet></router-outlet>
+      </mat-tab>
     </mat-tab-group>
   </mat-sidenav-content>
 

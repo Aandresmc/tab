@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRouting } from './app.routing';
 import { TabsModule } from './core/tabs/tabs.module';
 
 
@@ -14,7 +15,8 @@ import { TabsModule } from './core/tabs/tabs.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    TabsModule
+    TabsModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
