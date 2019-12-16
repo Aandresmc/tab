@@ -1,23 +1,163 @@
 <form>
 
-    <div class="form-group">
-        <h4>IDENTIFICACIÓN</h4>
+    <div class="form-group mb-4">
 
-        <p><strong>Nombre: </strong> <span>MARTA CECILIA ESPINOSA GARCIA</span> </p>
+        <mat-card class="card p-1 p-md-3">
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-header rounded p-0 p-md-2 mb-3">
+                            <mat-card-header>
+                                <mat-card-title>
+                                    <h4>IDENTIFICACIÓN</h4>
+                                </mat-card-title>
+                                <mat-card-subtitle>Personal Natural</mat-card-subtitle>
+                            </mat-card-header>
+                        </div>
+                        <p><strong>Nombre: </strong> <span>MARTA CECILIA ESPINOSA GARCIA</span> </p>
 
-        <p><strong>CC: </strong> <span>31258651</span> </p>
+                        <p><strong>CC: </strong> <span>31258651</span> </p>
 
-        <p><strong>NIT: </strong> <span>31258651</span> </p>
+                        <p><strong>NIT: </strong> <span>31258651</span> </p>
 
-        <p><strong>DV: </strong> <span>6</span> </p>
+                        <p><strong>DV: </strong> <span>6</span> </p>
+                    </div>
+                </div>
+            </mat-card-content>
 
-        <mat-form-field class="w-75" color="accent-50">
-            <input matInput placeholder="Input" >
-        </mat-form-field>
+        </mat-card>
 
-        <mat-form-field class="w-75" color="accent">
-            <textarea matInput placeholder="Textarea"></textarea>
-        </mat-form-field>
+    </div>
+
+    <div class="form-group mb-4">
+        <mat-card class="card p-1 p-md-3">
+            <div class="card-header p-0 p-md-2  rounded mb-3">
+                <mat-card-header>
+                    <mat-card-title>
+                        <h4>DATOS COMERCIALES</h4>
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        <p>(*) Campos obligatorios</p>
+                    </mat-card-subtitle>
+                </mat-card-header>
+            </div>
+            <mat-card-content class="row">
+
+                <mat-form-field class="col-12">
+                    <mat-label>Datos Domicilio Principal *</mat-label>
+                    <select matNativeControl disabled required>
+                        <option value="CL 10 # 18 - 60">CL 10 # 18 - 60</option>
+                    </select>
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <mat-label>Pais *</mat-label>
+                    <select matNativeControl disabled required>
+                        <option value="COLOMBIA">COLOMBIA</option>
+                    </select>
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <input matInput placeholder="Departamento *" disabled value="VALLE DEL CAUCA">
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <mat-label>Municipio *</mat-label>
+                    <select matNativeControl disabled required>
+                        <option value="CALI">CALI</option>
+                    </select>
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <mat-label>Localidad-Barrio-Vereda-Corregimiento</mat-label>
+                    <select matNativeControl required>
+                        <option value="Bretaña - Comuna 09">Bretaña - Comuna 09</option>
+                    </select>
+                </mat-form-field>
+
+                <div class="card border-dark m-4 mt-0 h-50">
+                    <div class="card-body text-dark">
+                        <div class="row">
+                            <mat-icon class="mx-2" color="primary">info</mat-icon>
+                            <h5 class="card-title mb-1"> Por favor ....</h5>
+                        </div>
+                        <p class="card-text">Debe ingresar al menos un número telefónico de contacto fijo o celular.</p>
+                    </div>
+                </div>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <input matInput type="number" required placeholder="Telefono 1" value="31242423">
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <input matInput type="number" placeholder="Telefono 2" value="31242423">
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <input matInput type="number" placeholder="Telefono 3" value="31242423">
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <input matInput type="email" placeholder="Correo Electrónico" required value="31242423">
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <input matInput placeholder="Código Postal" value="31242423">
+                </mat-form-field>
+
+                <mat-form-field class="col-12 col-md-6 ">
+                    <mat-label>Zona</mat-label>
+                    <select matNativeControl required>
+                        <option value="Urbana">Urbana</option>
+                    </select>
+                </mat-form-field>
+                <mat-form-field class="col-12 col-md-6 ">
+                    <mat-label>Ubicación</mat-label>
+                    <select matNativeControl required>
+                        <option value="Local">Local</option>
+                    </select>
+                </mat-form-field>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+
+    <div class="form-group mb-4">
+        <mat-card class="card p-1 p-md-3">
+            <div class="card-header p-0 p-md-2  rounded mb-3">
+                <mat-card-header>
+                    <mat-card-title>
+                        <h4>DATOS PARA NOTIFICACIÓN JUDICIAL Y ADMINISTRATIVA</h4>
+                    </mat-card-title>
+                    <mat-card-subtitle>Personal Natural</mat-card-subtitle>
+                </mat-card-header>
+            </div>
+            <mat-card-content>
+                <div class="card border-dark m-0 m-md-4 mt-0 h-50 ">
+                    <div class="card-body text-dark">
+                        <div class="row">
+                            <mat-icon class="mx-2" color="primary">info</mat-icon>
+                            <h5 class="card-title mb-1">Artículo 291</h5>
+                        </div>
+                        <p class="card-text">De acuerdo con el artículo 291 del Código General del Proceso, “las
+                            personas jurídicas de derecho privado y los comerciantes inscritos en el registro mercantil
+                            deberán registrar en la Cámara de Comercio o en la oficina de registro correspondiente del
+                            lugar donde funcione su sede principal, sucursal o agencia, la dirección donde recibirán
+                            notificaciones judiciales. Con el mismo propósito deberán registrar, además, una dirección
+                            electrónica”.
+
+                        </p>
+                        <p>Si los datos para notificación judicial son iguales a los datos del domicilio principal
+                            oprima el botón copiar datos comerciales.</p>
+                            <button class="float-right mt-n4" mat-fab   matTooltip="Copiar datos comerciales" color="primary">
+                                <mat-icon>file_copy</mat-icon> 
+                            </button>
+                    </div>
+                </div>
+
+            </mat-card-content>
+
+        </mat-card>
     </div>
 
 </form>
